@@ -1,0 +1,16 @@
+타입스크립트(TypeScript)
+ - 오픈소스
+ - 자바스크립트에 타입을 부여한 언어로 자바스크립트의 확장된 언어라도 볼 수 있다.
+ - 자바스크립트와 달리 브라우저에서 실행하려면 컴파일을 통해 브라우저에서 사용할 수 있는 파일로 변환하는 과정이 필요하다.
+   .ts -> .js
+
+타입스크립트 사용법
+1)node.js 설치
+2)npm init
+ - package.json 생성
+3)npm i @types/node
+ - ts-node 설치
+4)npm i typescript [-g]
+ - typescript 컴파일러 설치(tsc)
+5)npm install ts-node [-g]
+ - 타입스크립트 파일을 컴파일 + 실행 한번에 가능(ts-node)

@@ -1,0 +1,12 @@
+컴파일러 명령어
+ - tsc -v
+   타입스크립트 컴파일러 버전 확인
+
+ - tsc
+   tsconfig.json의 src에 해당하는 항목 모두 컴파일
+
+ - tsc src/file.ts
+   단건 타입스크립트 컴파일
+   
+ - ts-node /src/file.ts
+   타입스크립트 컴파일 + 파일 실행

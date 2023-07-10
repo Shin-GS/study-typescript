@@ -1,0 +1,41 @@
+컴파일러 옵션
+ - 얼마나 엄격하게 타입 오류를 검사할지 또는 자바스크립트 코드의 버전은 어떻게 할지 지정 가능
+ - tsc --init
+   tsconfig.json 생성
+ - {
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "ESNext",
+      "outDir": "dist",
+      "strict": true,
+      "moduleDetection": "force"
+  },
+  "ts-node":{
+    "esm": true
+  },
+  "include": ["src"]
+}
+
+1)include
+ - "include": ["src"]
+ - src 경로 아래에 있는 모든 파일을 한번에 컴파일
+
+2)compilerOptions
+ - "compilerOptions": {
+        "target": "ES5",
+        "module": "ESNext",
+        "outDir": "dist",
+        "strict": true,
+        "moduleDetection": "force"
+    }
+ - target : 어떤 버전의 자바스크립트로 바꿔줄지 결정(ES, ESNext)
+ - module : 자바스크릅트 파일간 import 문법을 구현할때 어떤 문법을 사용할지 결정(CommonJS, ESNext)
+ - outDir : 컴파일 결과 생성될 자바스크립트 파일의 위치
+ - strict : 모든 엄격한 타입-체킹 옵션 활성화 여부
+ - moduleDetection : 파일별로 모듈 독립성 설정 => "export {}" 자동 추가
+
+3)ts-node
+ - "ts-node":{
+    "esm": true
+  }
+ - esm : ts-node가 esm 모듈 시스템으로 동작을 한다.
